@@ -12,3 +12,4 @@ async function down() {
     await client.end();
 }
 
+export { up, down };
