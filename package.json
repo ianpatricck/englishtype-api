@@ -5,6 +5,7 @@
     "license": "MIT",
     "scripts": {
         "watch": "tsc --watch",
+        "db": "node ./dist/database/manager.js",
         "start": "nodemon ./dist/server.js"
     },
     "dependencies": {
