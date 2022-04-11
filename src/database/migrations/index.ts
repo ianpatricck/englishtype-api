@@ -1,10 +1,12 @@
-import { up as EnglishTableUp, down as EnglishTableDown } from "./EnglishTableMigration";
-import { up as PortugueseTableUp, down as PortugueseTableDown } from "./PortugueseTableMigration";
+import { up as englishTableUp, down as englishTableDown } from "./EnglishTableMigration";
+import { up as portugueseTableUp, down as portugueseTableDown } from "./PortugueseTableMigration";
 
 async function migrate(): Promise<void> {
-    console.log("migrate");
+    await englishTableDown();
+    await portugueseTableDown();
 
-    // ..
+    await englishTableUp();
+    await portugueseTableUp();
 }
 
 export default migrate;
