@@ -11,6 +11,15 @@ $ git clone https://github.com/ianpatricck/englishtype-api
 $ cd englishtype-api
 ```
 
+### Migrate and seed
+
+Before that, configure the .env filesure env file.
+
+```
+$ yarn db migrate
+$ yarn db seed
+```
+
 ### Run the installation and startup commands
 ```
 $ yarn install
