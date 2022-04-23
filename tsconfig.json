@@ -13,5 +13,11 @@
         "emitDecoratorMetadata": true, 
         "forceConsistentCasingInFileNames": true,
         "resolveJsonModule": true
-    }
+    },
+    "exclude": [
+        "src/database/migrations/",
+        "src/database/seeds/",
+        "src/database/data.json",
+        "src/database/manager.ts"
+    ]
 }
